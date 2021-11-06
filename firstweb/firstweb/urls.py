@@ -19,5 +19,6 @@ from django.urls import path, include
 # path คือ การทำให้เว็บไซต์มี url ย่อย
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',include('myapp.urls')), #ทำให้project ลิ้งค์กับ urls ของเรา
 
 ]
