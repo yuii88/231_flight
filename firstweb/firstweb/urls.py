@@ -14,8 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
+from django.urls import path, include 
+# include คือ คำสั่งการลิ้งค์project กับ myapp ให้เข้ากัน
+# path คือ การทำให้เว็บไซต์มี url ย่อย
 urlpatterns = [
     path('admin/', admin.site.urls),
+
 ]
